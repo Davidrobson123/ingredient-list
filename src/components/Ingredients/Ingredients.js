@@ -80,7 +80,7 @@ const Ingredients = () => {
               ingredients={userIngredients}
               onRemoveItem={removeIngredientHandler}/>
       )
-  })
+  }, [userIngredients, removeIngredientHandler])
 
   return (
     <div className="App">
